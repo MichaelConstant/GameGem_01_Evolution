@@ -25,7 +25,11 @@ public class PlayerComponent : BaseUnit
     
     private Vector3 _playerMoveInput;
 
+    private Animator _animator;
+
     private Camera _mainCamera;
+
+    public List<GameObject> PlayerSprite = new List<GameObject>();
 
     public AudioSource ShootingSFX_level1;
     public AudioSource ShootingSFX_level2;
@@ -34,6 +38,7 @@ public class PlayerComponent : BaseUnit
     public AudioSource Die;
     public AudioSource PickUp;
     public AudioSource Evolution;
+    private static readonly int Level = Animator.StringToHash("Level");
 
     private void Start()
     {
@@ -68,5 +73,11 @@ public class PlayerComponent : BaseUnit
         RotateTo(mousePosition);
 
         Move(_playerMoveInput);
+    }
+
+    public void SetAnimatorState(int level)
+    {
+        if(!_animator) return;
+        _animator.SetInteger(Level, level);
     }
 }
