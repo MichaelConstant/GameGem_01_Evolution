@@ -80,4 +80,11 @@ public class PlayerComponent : BaseUnit
         if(!_animator) return;
         _animator.SetInteger(Level, level);
     }
+
+    public void SetPlayerState(int level)
+    {
+        PlayerSprite[level - 1].SetActive(false);
+        PlayerSprite[level].SetActive(true);
+        var scale = (2f + (float) level *2f);
+    }
 }

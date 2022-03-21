@@ -22,7 +22,6 @@ public class LevelOneBehaviour : StateMachineBehaviour
     {
         Time.timeScale = 1;
         PlayerInputSystem.Instance.CanPlayerInput = true;
-        animator.gameObject.GetComponent<PlayerComponent>().SetAnimatorState(0);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

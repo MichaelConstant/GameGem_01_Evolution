@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [System.Serializable]
 public enum EnemyLevel
@@ -26,6 +27,8 @@ public class BaseEnemy : BaseUnit
 
     private float _timer;
 
+    private Vector3 _movePosition;
+    
     private GameObject _player;
 
     private void Start()
@@ -60,7 +63,17 @@ public class BaseEnemy : BaseUnit
 
         if (_timer < ShootPlayerCoolDown) return;
 
-        ShootBullet(BulletPrefab);
+        var randomNum = Random.Range(0, 1);
+
+        if (randomNum == 0)
+        {
+            ShootBullet(BulletPrefab);
+        }
+        else
+        {
+            var randomVectorX = Random.Range(-2f, 2f);
+            var randomVectorY = Random.Range(-2, 2f);
+        }
 
         _timer = 0;
     }

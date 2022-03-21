@@ -25,7 +25,7 @@ public class DropLootComponent : MonoBehaviour
                     playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 10;
                     playerComponent.HealthPoints = 10;
-                    playerComponent.SetAnimatorState(1);
+                    playerComponent.SetPlayerState(1);
                 }
                 else
                 {
@@ -39,7 +39,7 @@ public class DropLootComponent : MonoBehaviour
                     playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 30;
                     playerComponent.HealthPoints = 15;
-                    playerComponent.SetAnimatorState(2);
+                    playerComponent.SetPlayerState(2);
                 }
                 else
                 {
@@ -53,7 +53,7 @@ public class DropLootComponent : MonoBehaviour
                     playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 60;
                     playerComponent.HealthPoints = 20;
-                    playerComponent.SetAnimatorState(3);
+                    playerComponent.SetPlayerState(3);
                 }
                 else
                 {
