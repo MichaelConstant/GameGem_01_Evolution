@@ -768,6 +768,8 @@ MonoBehaviour:
   BulletPrefab: {fileID: 8366545698162367235, guid: 8ad516f505aa2ef4a85e82382f3d8f0d, type: 3}
   ShootKey: 0
   ShootMouseButton: 0
+  PlayerLevel: 0
+  PlayerExp: 0
   ShootingSFX_level1: {fileID: 1583030535}
   ShootingSFX_level2: {fileID: 0}
   ShootingSFX_level3: {fileID: 0}
