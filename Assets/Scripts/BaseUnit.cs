@@ -60,6 +60,7 @@ public class BaseUnit : MonoBehaviour
                 case PlayerLevel.Level1:         
                     PlayerInputSystem.Instance.CanPlayerInput = false;
                     gameObject.SetActive(false);
+                    HUDSystem.Instance.LoseGame();
                     break;
                 case PlayerLevel.Level2:
                     player.PlayerLevel = PlayerLevel.Level1;

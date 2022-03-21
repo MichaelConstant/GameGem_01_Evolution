@@ -6,11 +6,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 
-public class HUDSystem : MonoBehaviour
+public class HUDSystem : Singleton<HUDSystem>
 {
     public Image Hp;
     public Image Exp;
     public Text Level;
+    public GameObject Lose;
     
     private PlayerComponent _player;
 
@@ -60,5 +61,11 @@ public class HUDSystem : MonoBehaviour
             PlayerLevel.Level4 => "LV 4",
             _ => throw new ArgumentOutOfRangeException()
         };
+    }
+
+    public void LoseGame()
+    {
+        Lose.SetActive(true);
+        Time.timeScale = 0;
     }
 }

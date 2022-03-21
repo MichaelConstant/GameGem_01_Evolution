@@ -16,11 +16,10 @@ public enum EnemyLevel
 
 public class BaseEnemy : BaseUnit
 {
-    [Header("Base Enemy Setting")]
-    public EnemyLevel EnemyLevel;
+    [Header("Base Enemy Setting")] public EnemyLevel EnemyLevel;
 
     public GameObject DropLoot;
-    
+
     public GameObject BulletPrefab;
 
     public float ShootPlayerCoolDown = 2f;
@@ -28,7 +27,7 @@ public class BaseEnemy : BaseUnit
     private float _timer;
 
     private Vector3 _movePosition;
-    
+
     private GameObject _player;
 
     private void Start()
@@ -51,13 +50,25 @@ public class BaseEnemy : BaseUnit
             EnemyLevel.Level4 => 81,
             _ => throw new ArgumentOutOfRangeException()
         };
+
+        _movePosition = transform.position;
     }
 
     private void Update()
     {
         if (!_player) return;
 
+        var randomVectorX = Random.Range(-0.2f, 0.2f);
+        var randomVectorY = Random.Range(-0.2f, 0.2f);
+        
+        _movePosition = new Vector3(randomVectorX, randomVectorY, 0);
+        
+
+        if (Vector3.Distance(transform.position, _player.transform.position) >= 8f) return;
+
         RotateTo(_player.transform.position);
+
+        Move(_movePosition);
         
         _timer += Time.deltaTime;
 
@@ -69,13 +80,6 @@ public class BaseEnemy : BaseUnit
         {
             ShootBullet(BulletPrefab);
         }
-        else
-        {
-            var randomVectorX = Random.Range(-2f, 2f);
-            var randomVectorY = Random.Range(-2, 2f);
-            _movePosition = new Vector3(transform.position.x + randomVectorX, transform.position.y + randomVectorY, 0);
-        }
-
         _timer = 0;
     }
 
@@ -84,7 +88,7 @@ public class BaseEnemy : BaseUnit
         var dropLoot = Instantiate(DropLoot, transform.position, Quaternion.identity);
 
         dropLoot.transform.SetParent(null);
-        
+
         dropLoot.GetComponent<DropLootComponent>().Exp = EnemyLevel switch
         {
             EnemyLevel.Level1 => 3,
@@ -93,7 +97,7 @@ public class BaseEnemy : BaseUnit
             EnemyLevel.Level4 => 12,
             _ => throw new ArgumentOutOfRangeException()
         };
-        
+
         gameObject.SetActive(false);
     }
 }

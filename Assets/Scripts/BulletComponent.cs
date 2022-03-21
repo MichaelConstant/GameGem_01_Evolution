@@ -6,7 +6,7 @@ using UnityEngine;
 public class BulletComponent : MonoBehaviour
 {
     public float BulletSpeed = 5f;
-    public float TimeToDestroy = 5f;
+    private float TimeToDestroy = 1f;
     public int Damage = 1;
 
     public Guid BulletGuid;
