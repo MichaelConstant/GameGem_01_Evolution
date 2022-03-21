@@ -87,4 +87,11 @@ public class PlayerComponent : BaseUnit
         PlayerSprite[level].SetActive(true);
         var scale = (2f + (float) level *2f);
     }
+    
+    public void ResetPlayerState(int level)
+    {
+        PlayerSprite[level].SetActive(true);
+        PlayerSprite[level + 1].SetActive(false);
+        var scale = (2f + (float) level *2f);
+    }
 }

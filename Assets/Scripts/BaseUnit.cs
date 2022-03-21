@@ -65,14 +65,20 @@ public class BaseUnit : MonoBehaviour
                 case PlayerLevel.Level2:
                     player.PlayerLevel = PlayerLevel.Level1;
                     player.HealthPoints = 5;
+                    player.ResetPlayerState(1);
+                    player.PlayerExp = 0;
                     break;
                 case PlayerLevel.Level3:
                     player.PlayerLevel = PlayerLevel.Level2;
                     player.HealthPoints = 10;
+                    player.PlayerExp = 0;
+                    player.ResetPlayerState(2);
                     break;
                 case PlayerLevel.Level4:
                     player.PlayerLevel = PlayerLevel.Level3;
                     player.HealthPoints = 15;
+                    player.PlayerExp = 0;
+                    player.ResetPlayerState(3);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
