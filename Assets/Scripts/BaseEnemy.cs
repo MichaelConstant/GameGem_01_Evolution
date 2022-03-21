@@ -73,6 +73,7 @@ public class BaseEnemy : BaseUnit
         {
             var randomVectorX = Random.Range(-2f, 2f);
             var randomVectorY = Random.Range(-2, 2f);
+            _movePosition = new Vector3(transform.position.x + randomVectorX, transform.position.y + randomVectorY, 0);
         }
 
         _timer = 0;

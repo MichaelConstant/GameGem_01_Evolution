@@ -157,6 +157,8 @@ MonoBehaviour:
   MoveSpeed: 1
   HealthPoints: 1
   ForwardResource: {fileID: 9089678988818613709}
+  EnemyLevel: 0
+  DropLoot: {fileID: 0}
   BulletPrefab: {fileID: 8366545698162367235, guid: 8ad516f505aa2ef4a85e82382f3d8f0d, type: 3}
   ShootPlayerCoolDown: 2
 --- !u!114 &1985988008
