@@ -143,6 +143,10 @@ PrefabInstance:
       value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
       objectReference: {fileID: 0}
@@ -411,6 +415,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.2
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: EnemyLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721878, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -567,6 +579,14 @@ PrefabInstance:
     - target: {fileID: 9089678990101721876, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: EnemyLevel
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721878, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_Sprite
@@ -939,6 +959,10 @@ PrefabInstance:
       value: EnemyBase (2)
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
       objectReference: {fileID: 0}
@@ -1015,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyBase (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
@@ -1229,6 +1257,10 @@ PrefabInstance:
       value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
       objectReference: {fileID: 0}
@@ -1395,6 +1427,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.2
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: EnemyLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721878, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1476,6 +1516,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
@@ -1561,6 +1605,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
@@ -2026,6 +2074,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyBase
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: EnemyLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721878, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2112,6 +2168,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
@@ -2288,6 +2348,10 @@ PrefabInstance:
       value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
       objectReference: {fileID: 0}
@@ -2373,6 +2437,10 @@ PrefabInstance:
       value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
       objectReference: {fileID: 0}
@@ -2456,6 +2524,14 @@ PrefabInstance:
     - target: {fileID: 9089678990101721876, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: EnemyLevel
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721878, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: m_Sprite
@@ -2680,6 +2756,10 @@ PrefabInstance:
       value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
       objectReference: {fileID: 0}
@@ -2882,6 +2962,10 @@ PrefabInstance:
       value: EnemyBase (2)
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
       objectReference: {fileID: 0}
@@ -2967,6 +3051,10 @@ PrefabInstance:
       value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 1
       objectReference: {fileID: 0}
@@ -3051,6 +3139,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
@@ -3218,6 +3310,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
+      propertyPath: DropLoot
+      value: 
+      objectReference: {fileID: 7427184706691732986, guid: 30d5bdd0b70da004db69fc5446c111f0, type: 3}
     - target: {fileID: 9089678990101721877, guid: a2558eba5efae50458e6d4f2c5df923e, type: 3}
       propertyPath: EnemyLevel
       value: 2
