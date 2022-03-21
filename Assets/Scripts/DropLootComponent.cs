@@ -13,7 +13,7 @@ public class DropLootComponent : MonoBehaviour
         if (col.GetComponent<PlayerComponent>() == null) return;
 
         var playerComponent = col.GetComponent<PlayerComponent>();
-        playerComponent.PickUp.Play();
+
         playerComponent.PlayerExp += Exp;
 
         switch (playerComponent.PlayerLevel)
@@ -22,27 +22,46 @@ public class DropLootComponent : MonoBehaviour
                 if (playerComponent.PlayerExp >= 10)
                 {
                     playerComponent.PlayerLevel = PlayerLevel.Level2;
+                    playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 10;
                     playerComponent.HealthPoints = 10;
+                    playerComponent.SetAnimatorState(1);
+                }
+                else
+                {
+                    playerComponent.PickUp.Play();
                 }
                 break;
             case PlayerLevel.Level2:
                 if (playerComponent.PlayerExp >= 30)
                 {
                     playerComponent.PlayerLevel = PlayerLevel.Level3;
+                    playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 30;
                     playerComponent.HealthPoints = 15;
+                    playerComponent.SetAnimatorState(2);
+                }
+                else
+                {
+                    playerComponent.PickUp.Play();
                 }
                 break;
             case PlayerLevel.Level3:
                 if (playerComponent.PlayerExp >= 60)
                 {
                     playerComponent.PlayerLevel = PlayerLevel.Level4;
+                    playerComponent.Evolution.Play();
                     playerComponent.PlayerExp -= 60;
                     playerComponent.HealthPoints = 20;
+                    playerComponent.SetAnimatorState(3);
+                }
+                else
+                {
+                    playerComponent.PickUp.Play();
                 }
                 break;
             case PlayerLevel.Level4:
+                playerComponent.PickUp.Play();
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
