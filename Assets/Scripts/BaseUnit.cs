@@ -48,11 +48,20 @@ public class BaseUnit : MonoBehaviour
         HealthPoints -= damage;
         HealthPoints = Mathf.Max(HealthPoints, 0);
         
+        Debug.Log(HealthPoints);
+        
         if(HealthPoints != 0) return;
+        
         if (isPlayer)
         {
             PlayerInputSystem.Instance.CanPlayerInput = false;
+            gameObject.SetActive(false);
         }
-        gameObject.SetActive(false);
+        
+        else
+        {
+             this.GetComponent<BaseEnemy>().Dying();
+        }
+
     }
 }

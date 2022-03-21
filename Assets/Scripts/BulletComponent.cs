@@ -3,20 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public enum BulletLevel
-{
-    Level1,
-    Level2,
-    Level3,
-    Level4,
-    Enemy,
-}
-
 public class BulletComponent : MonoBehaviour
 {
-    public BulletLevel BulletLevel;
-    
     public float BulletSpeed = 5f;
     public float TimeToDestroy = 5f;
     public int Damage = 1;

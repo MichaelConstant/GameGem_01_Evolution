@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+public enum PlayerLevel
+{
+    Level1,
+    Level2,
+    Level3,
+    Level4,
+}
+
 public class PlayerComponent : BaseUnit
 {
     [Header("Player Setting")]
