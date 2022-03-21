@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 [System.Serializable]
@@ -38,6 +39,15 @@ public class BaseEnemy : BaseUnit
             EnemyLevel.Level4 => 8,
             _ => throw new ArgumentOutOfRangeException()
         };
+
+        HealthPoints = EnemyLevel switch
+        {
+            EnemyLevel.Level1 => 3,
+            EnemyLevel.Level2 => 9,
+            EnemyLevel.Level3 => 27,
+            EnemyLevel.Level4 => 81,
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 
     private void Update()
@@ -57,7 +67,18 @@ public class BaseEnemy : BaseUnit
 
     public void Dying()
     {
-        var dropLoot = Instantiate(DropLoot, transform);
+        var dropLoot = Instantiate(DropLoot, transform.position, Quaternion.identity);
+
+        dropLoot.transform.SetParent(null);
+        
+        dropLoot.GetComponent<DropLootComponent>().Exp = EnemyLevel switch
+        {
+            EnemyLevel.Level1 => 3,
+            EnemyLevel.Level2 => 6,
+            EnemyLevel.Level3 => 9,
+            EnemyLevel.Level4 => 12,
+            _ => throw new ArgumentOutOfRangeException()
+        };
         
         gameObject.SetActive(false);
     }

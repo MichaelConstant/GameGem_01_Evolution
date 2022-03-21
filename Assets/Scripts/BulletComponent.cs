@@ -35,5 +35,6 @@ public class BulletComponent : MonoBehaviour
         if (attackableComponent.AttackableGuid == BulletGuid) return;
         
         attackableComponent.ApplyDamage(Damage);
+        Destroy(gameObject);
     }
 }

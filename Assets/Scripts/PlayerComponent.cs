@@ -19,6 +19,9 @@ public class PlayerComponent : BaseUnit
 
     public KeyCode ShootKey;
     public MouseButton ShootMouseButton;
+
+    public PlayerLevel PlayerLevel = PlayerLevel.Level1;
+    public int PlayerExp = 0;
     
     private Vector3 _playerMoveInput;
 
@@ -50,7 +53,15 @@ public class PlayerComponent : BaseUnit
         if (Input.GetKeyDown(ShootKey) || Input.GetMouseButtonDown((int)ShootMouseButton))
         {
             ShootBullet(BulletPrefab);
-            ShootingSFX_level1.Play();
+            var shootSfx = PlayerLevel switch
+            {
+                PlayerLevel.Level1 => ShootingSFX_level1,
+                PlayerLevel.Level2 => ShootingSFX_level2,
+                PlayerLevel.Level3 => ShootingSFX_level3,
+                PlayerLevel.Level4 => ShootingSFX_level4,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+            shootSfx.Play();
         }
 
         var mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);

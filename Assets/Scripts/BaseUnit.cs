@@ -47,21 +47,40 @@ public class BaseUnit : MonoBehaviour
     {
         HealthPoints -= damage;
         HealthPoints = Mathf.Max(HealthPoints, 0);
-        
-        Debug.Log(HealthPoints);
-        
+
         if(HealthPoints != 0) return;
         
         if (isPlayer)
         {
-            PlayerInputSystem.Instance.CanPlayerInput = false;
-            gameObject.SetActive(false);
+            var player = GetComponent<PlayerComponent>();
+            player.Die.Play();
+
+            switch (player.PlayerLevel)
+            {
+                case PlayerLevel.Level1:         
+                    PlayerInputSystem.Instance.CanPlayerInput = false;
+                    gameObject.SetActive(false);
+                    break;
+                case PlayerLevel.Level2:
+                    player.PlayerLevel = PlayerLevel.Level1;
+                    player.HealthPoints = 5;
+                    break;
+                case PlayerLevel.Level3:
+                    player.PlayerLevel = PlayerLevel.Level2;
+                    player.HealthPoints = 10;
+                    break;
+                case PlayerLevel.Level4:
+                    player.PlayerLevel = PlayerLevel.Level3;
+                    player.HealthPoints = 15;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
         
         else
         {
              this.GetComponent<BaseEnemy>().Dying();
         }
-
     }
 }
