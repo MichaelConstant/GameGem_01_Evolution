@@ -23,7 +23,15 @@ public class PlayerComponent : BaseUnit
     private Vector3 _playerMoveInput;
 
     private Camera _mainCamera;
-    
+
+    public AudioSource ShootingSFX_level1;
+    public AudioSource ShootingSFX_level2;
+    public AudioSource ShootingSFX_level3;
+    public AudioSource ShootingSFX_level4;
+    public AudioSource Die;
+    public AudioSource PickUp;
+    public AudioSource Evolution;
+
     private void Start()
     {
         _mainCamera = Camera.main;
@@ -42,6 +50,7 @@ public class PlayerComponent : BaseUnit
         if (Input.GetKeyDown(ShootKey) || Input.GetMouseButtonDown((int)ShootMouseButton))
         {
             ShootBullet(BulletPrefab);
+            ShootingSFX_level1.Play();
         }
 
         var mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
